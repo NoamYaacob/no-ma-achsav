@@ -220,6 +220,13 @@ function renderEpisodes(episodes, query = '') {
         ).join('')}</div>`
       : '';
 
+    const ytBadge = ep.youtubeId
+      ? `<span class="episode-youtube-badge">
+           <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#fff" points="9.545 15.568 15.818 12 9.545 8.432"/></svg>
+           וידאו
+         </span>`
+      : '';
+
     return `
       <article class="episode-card" data-episode='${JSON.stringify(ep).replace(/'/g, "&#39;")}'>
         <div class="episode-card-inner">
@@ -230,6 +237,7 @@ function renderEpisodes(episodes, query = '') {
               <div class="episode-meta">
                 <span>${date}</span>
                 ${ep.duration ? `<span>${ep.duration}</span>` : ''}
+                ${ytBadge}
               </div>
             </div>
           </div>
@@ -347,13 +355,29 @@ function openModal(episode) {
   document.getElementById('modal-duration').textContent = episode.duration || '';
   document.getElementById('modal-description').textContent = episode.description;
 
-  // Audio
+  // YouTube video
+  const videoSection = document.getElementById('modal-video');
+  const ytIframe = document.getElementById('modal-youtube');
+  const ytLink = document.getElementById('modal-youtube-link');
+  if (episode.youtubeId) {
+    ytIframe.src = `https://www.youtube.com/embed/${episode.youtubeId}`;
+    videoSection.style.display = 'block';
+    ytLink.href = `https://www.youtube.com/watch?v=${episode.youtubeId}`;
+    ytLink.style.display = 'inline-flex';
+  } else {
+    ytIframe.src = '';
+    videoSection.style.display = 'none';
+    ytLink.style.display = 'none';
+  }
+
+  // Audio (show only if no YouTube video)
   const audio = document.getElementById('modal-audio');
+  const playerSection = document.getElementById('modal-player');
   if (episode.audioUrl) {
     audio.src = episode.audioUrl;
-    audio.parentElement.style.display = 'block';
+    playerSection.style.display = episode.youtubeId ? 'none' : 'block';
   } else {
-    audio.parentElement.style.display = 'none';
+    playerSection.style.display = 'none';
   }
 
   // Quotes
@@ -379,8 +403,10 @@ function openModal(episode) {
 function closeModal() {
   const overlay = document.getElementById('modal-overlay');
   const audio = document.getElementById('modal-audio');
+  const ytIframe = document.getElementById('modal-youtube');
   audio.pause();
   audio.src = '';
+  ytIframe.src = '';
   overlay.classList.remove('active');
   document.body.style.overflow = '';
 }

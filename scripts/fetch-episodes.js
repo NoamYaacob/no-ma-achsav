@@ -4,6 +4,7 @@ const path = require('path');
 const { parseString } = require('xml2js');
 
 const RSS_FEED_URL = 'https://anchor.fm/s/fca75880/podcast/rss';
+const YOUTUBE_PLAYLIST_FEED = 'https://www.youtube.com/feeds/videos.xml?playlist_id=PLojIjH_TowtdOL4dChJBw7O1pN3-yQscF';
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'episodes.json');
 const LOCAL_RSS_PATH = path.join(__dirname, '..', 'data', 'rss.xml');
 
@@ -165,6 +166,42 @@ async function main() {
       link: item.link || '',
     };
   });
+
+  // Fetch YouTube playlist and match videos to episodes
+  console.log('Fetching YouTube playlist...');
+  try {
+    const ytXml = fetchUrl(YOUTUBE_PLAYLIST_FEED);
+    const ytResult = await new Promise((resolve, reject) => {
+      parseString(ytXml, { explicitArray: false, trim: true }, (err, res) => {
+        if (err) reject(err);
+        else resolve(res);
+      });
+    });
+
+    const entries = ytResult.feed.entry;
+    const ytEntries = Array.isArray(entries) ? entries : (entries ? [entries] : []);
+    const ytMap = {};
+
+    for (const entry of ytEntries) {
+      const videoId = entry['yt:videoId'];
+      const title = entry.title || '';
+      const match = title.match(/פרק\s+(\d+)/);
+      if (match && videoId) {
+        ytMap[parseInt(match[1])] = videoId;
+      }
+    }
+
+    console.log(`Found ${Object.keys(ytMap).length} YouTube videos`);
+
+    for (const ep of episodes) {
+      ep.youtubeId = ytMap[ep.episodeNumber] || null;
+    }
+  } catch (err) {
+    console.warn('Warning: Could not fetch YouTube playlist:', err.message);
+    for (const ep of episodes) {
+      ep.youtubeId = null;
+    }
+  }
 
   // Sort episodes by episode number descending (newest first)
   episodes.sort((a, b) => b.episodeNumber - a.episodeNumber);

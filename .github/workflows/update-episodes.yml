@@ -2,8 +2,8 @@ name: Update Episodes
 
 on:
   schedule:
-    # Run every day at 10:00 UTC (12:00 Israel time)
-    - cron: '0 10 * * *'
+    # Run every 4 hours to catch new episodes quickly
+    - cron: '0 */4 * * *'
   workflow_dispatch: # Allow manual trigger
   push:
     branches: [main]

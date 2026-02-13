@@ -600,6 +600,52 @@ body {
   margin: 0 4px;
 }
 
+/* YouTube Video Embed */
+.modal-video {
+  margin-bottom: 24px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-sm);
+}
+
+/* YouTube badge on episode cards */
+.episode-youtube-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background: rgba(255, 0, 0, 0.12);
+  color: #FF4444;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.listen-btn.youtube {
+  background: #FF0000;
+  color: #fff;
+}
+
+.listen-btn.youtube:hover {
+  background: #CC0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
 .modal-body {
   margin-bottom: 24px;
 }
@@ -664,10 +710,8 @@ body {
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .footer-brand h3 {
