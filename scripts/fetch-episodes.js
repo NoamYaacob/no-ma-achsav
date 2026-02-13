@@ -4,7 +4,7 @@ const path = require('path');
 const { parseString } = require('xml2js');
 
 const RSS_FEED_URL = 'https://anchor.fm/s/fca75880/podcast/rss';
-const YOUTUBE_PLAYLIST_FEED = 'https://www.youtube.com/feeds/videos.xml?playlist_id=PLojIjH_TowtdOL4dChJBw7O1pN3-yQscF';
+const YOUTUBE_PLAYLIST_URL = 'https://www.youtube.com/playlist?list=PLojIjH_TowtdOL4dChJBw7O1pN3-yQscF';
 const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'episodes.json');
 const LOCAL_RSS_PATH = path.join(__dirname, '..', 'data', 'rss.xml');
 
@@ -167,27 +167,41 @@ async function main() {
     };
   });
 
-  // Fetch YouTube playlist and match videos to episodes
+  // Fetch YouTube playlist HTML and extract ALL video IDs
   console.log('Fetching YouTube playlist...');
   try {
-    const ytXml = fetchUrl(YOUTUBE_PLAYLIST_FEED);
-    const ytResult = await new Promise((resolve, reject) => {
-      parseString(ytXml, { explicitArray: false, trim: true }, (err, res) => {
-        if (err) reject(err);
-        else resolve(res);
-      });
-    });
-
-    const entries = ytResult.feed.entry;
-    const ytEntries = Array.isArray(entries) ? entries : (entries ? [entries] : []);
+    const html = fetchUrl(YOUTUBE_PLAYLIST_URL);
     const ytMap = {};
 
-    for (const entry of ytEntries) {
-      const videoId = entry['yt:videoId'];
-      const title = entry.title || '';
-      const match = title.match(/פרק\s+(\d+)/);
-      if (match && videoId) {
-        ytMap[parseInt(match[1])] = videoId;
+    // Extract videoId + title pairs from the playlist HTML JSON data
+    // Pattern: "videoId":"XXX" followed by title containing "פרק NN"
+    const videoIdRegex = /"videoId":"([a-zA-Z0-9_-]{11})"/g;
+    const titleRegex = /"text":"(פרק\s+\d+[^"]*)"}/g;
+
+    const videoIds = [];
+    const titles = [];
+    let m;
+    while ((m = videoIdRegex.exec(html)) !== null) videoIds.push(m[1]);
+    while ((m = titleRegex.exec(html)) !== null) titles.push(m[1]);
+
+    // Match each title to the closest preceding videoId
+    // The HTML structure repeats videoId multiple times per entry, then the title
+    // We iterate titles and for each find its videoId by scanning the HTML positions
+    for (const title of titles) {
+      const epMatch = title.match(/פרק\s+(\d+)/);
+      if (!epMatch) continue;
+      const epNum = parseInt(epMatch[1]);
+      if (ytMap[epNum]) continue; // already found
+
+      // Find this title's position in HTML to locate its videoId
+      const titlePos = html.indexOf(`"text":"${title}"`);
+      if (titlePos === -1) continue;
+
+      // Search backwards from titlePos for the nearest videoId
+      const preceding = html.substring(Math.max(0, titlePos - 2000), titlePos);
+      const vidMatches = [...preceding.matchAll(/"videoId":"([a-zA-Z0-9_-]{11})"/g)];
+      if (vidMatches.length > 0) {
+        ytMap[epNum] = vidMatches[vidMatches.length - 1][1];
       }
     }
 
