@@ -370,12 +370,12 @@ function openModal(episode) {
     ytLink.style.display = 'none';
   }
 
-  // Audio (show only if no YouTube video)
+  // Audio player
   const audio = document.getElementById('modal-audio');
   const playerSection = document.getElementById('modal-player');
   if (episode.audioUrl) {
     audio.src = episode.audioUrl;
-    playerSection.style.display = episode.youtubeId ? 'none' : 'block';
+    playerSection.style.display = 'block';
   } else {
     playerSection.style.display = 'none';
   }
