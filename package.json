@@ -1,0 +1,12 @@
+{
+  "name": "nu-ma-achshav-website",
+  "version": "1.0.0",
+  "description": "אתר הפודקאסט נו מה עכשיו? - צח רוקח ונועם אונגר",
+  "scripts": {
+    "fetch-episodes": "node scripts/fetch-episodes.js",
+    "build": "node scripts/fetch-episodes.js"
+  },
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  }
+}
