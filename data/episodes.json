@@ -6,9 +6,25 @@
     "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
     "link": "https://whatsnow.podbean.com",
     "language": "he",
-    "lastBuildDate": "2026-02-19T00:16:49.056Z"
+    "lastBuildDate": "2026-02-19T04:36:31.938Z"
   },
   "episodes": [
+    {
+      "title": "פרק 76 - צולעים אל האופק",
+      "description": "אין תיאור\nתהנו\n\n• • •\nומה עם הפודקאסט שלך?\n• • •\nוואטסאפ: https://wa.me/972504740040\nאתר: https://tox10.co.il\nלהרשמה ליוטיוב: https://bit.ly/3MAv5XZ\nאינסטגרם: https://www.instagram.com/tox10.co.il",
+      "shortDescription": "אין תיאור\nתהנו\n\n• • •\nומה עם הפודקאסט שלך?\n• • •\nוואטסאפ: https://wa.me/972504740040\nאתר: https://tox10.co.il\nלהרשמה ליוטיוב: https://bit.ly/3MAv5XZ\nאינסטגרם: https://www.instagram.com/tox10.co.il",
+      "pubDate": "Wed, 18 Feb 2026 14:35:51 GMT",
+      "audioUrl": "https://anchor.fm/s/fca75880/podcast/play/115683770/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-1-18%2F418342307-44100-2-85e858b60854c.mp3",
+      "duration": "2:01:57",
+      "durationSeconds": 7317,
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
+      "episodeNumber": 76,
+      "season": 1,
+      "quotes": [],
+      "guid": "e863b64e-17a9-45c8-86f5-5a59352bf31e",
+      "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/76---e3f8svq",
+      "youtubeId": "Hv_L5lkIO8c"
+    },
     {
       "title": "פרק 75 - אני וגיסי",
       "description": "פרק לייב \nמה יש לתאר ?\nאתם מכירים ת'פודקאסט\nתהנו\n\nכרטיסים ל\"נו מה עכשיו\" - לייב 10/3: https://www.standupfactory.co.il/%d7%a0%d7%95-%d7%9e%d7%94-%d7%a2%d7%9b%d7%a9%d7%99%d7%95-live-9/\n\n• • •\nומה עם הפודקאסט שלך?\n• • •\nוואטסאפ: https://wa.me/972504740040\nאתר: https://tox10.co.il\nלהרשמה ליוטיוב: https://bit.ly/3MAv5XZ\nאינסטגרם: https://www.instagram.com/tox10.co.il",
@@ -1198,6 +1214,6 @@
       "youtubeId": null
     }
   ],
-  "totalEpisodes": 74,
-  "fetchedAt": "2026-02-19T00:16:49.573Z"
+  "totalEpisodes": 75,
+  "fetchedAt": "2026-02-19T04:36:32.203Z"
 }
