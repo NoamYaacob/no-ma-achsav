@@ -6,7 +6,7 @@
     "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
     "link": "https://whatsnow.podbean.com",
     "language": "he",
-    "lastBuildDate": "2026-04-14T12:19:04.133Z"
+    "lastBuildDate": "2026-04-14T16:24:28.215Z"
   },
   "episodes": [
     {
@@ -312,6 +312,22 @@
       "guid": "60a3519e-ef29-4418-8cbc-311697303434",
       "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/58---e37m83g",
       "youtubeId": "FG3pE4xGKWc"
+    },
+    {
+      "title": "פרק 57 - מטומטמי על",
+      "description": "פרק 57 של הפודקאסט הכי חציל מצליח בארץ \nצח מגיע עצבני על ספקים (מי אתה יא ז**) \nנועם עצבני על איש טכני נתנייתי (מי אתה יא בויה) \nעל החופש הגדול הקשה של צח עם הילדה, העיניים הירוקות של נועם והסיפור האמיתי של הגזלייטינג.\nתהנו\n\n• • •\nלהפקת הפודקאסט שלכם\nוואטסאפ: https://wa.me/972504740040\nאתר: https://tokz.co.il/\n• • •\nיוטיוב: https://bit.ly/3MAv5XZ\nאינסטגרם: https://www.instagram.com/tokz.co.il",
+      "shortDescription": "פרק 57 של הפודקאסט הכי חציל מצליח בארץ \nצח מגיע עצבני על ספקים (מי אתה יא ז**) \nנועם עצבני על איש טכני נתנייתי (מי אתה יא בויה) \nעל החופש הגדול הקשה של צח עם הילדה, העיניים הירוקות של נועם והסיפור האמיתי של הגזלייטינג.\nתהנו\n\n• • •\nלהפקת הפודקאסט שלכם\nוואטסאפ: https://wa.me/972504740040\nאתר: https://",
+      "pubDate": "Wed, 27 Aug 2025 09:00:30 GMT",
+      "audioUrl": "https://anchor.fm/s/fca75880/podcast/play/107418155/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-27%2F406372859-44100-2-6d04c22ad01a5.mp3",
+      "duration": "1:11:51",
+      "durationSeconds": 4311,
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
+      "episodeNumber": 57,
+      "season": 1,
+      "quotes": [],
+      "guid": "efedb4ba-c37e-42ce-8827-2d9bec54cd68",
+      "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/57---e37cl3b",
+      "youtubeId": "Bnkjz3SEozQ"
     },
     {
       "title": "פרק 56 - \"זה של אבו-ברלד\"",
@@ -1214,6 +1230,6 @@
       "youtubeId": null
     }
   ],
-  "totalEpisodes": 75,
-  "fetchedAt": "2026-04-14T12:19:04.454Z"
+  "totalEpisodes": 76,
+  "fetchedAt": "2026-04-14T16:24:28.667Z"
 }
