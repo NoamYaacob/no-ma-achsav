@@ -6,9 +6,25 @@
     "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
     "link": "https://whatsnow.podbean.com",
     "language": "he",
-    "lastBuildDate": "2026-05-13T16:44:53.760Z"
+    "lastBuildDate": "2026-05-13T20:33:16.788Z"
   },
   "episodes": [
+    {
+      "title": "פרק 81 - תזדקן ותתחפף מפה",
+      "description": "חבר׳ה פרק 81, עברנו כברת (למדנו מילה). אתם כבר מכירים את הפודקאסט, אין צורך בתיאור, תלחצו על איקס ותחזרו לפרק. יש פאנצ׳ים פאנצ׳ים פאנצ׳ים (אה כי אמרנו? זה של ברלד).• • •ומה עם הפודקאסט שלך?• • •וואטסאפ: https://wa.me/972504740040אתר: https://tox10.co.ilלהרשמה ליוטיוב: https://bit.ly/3MAv5XZאינסטגרם: https://www.instagram.com/tox10.co.il",
+      "shortDescription": "חבר׳ה פרק 81, עברנו כברת (למדנו מילה). אתם כבר מכירים את הפודקאסט, אין צורך בתיאור, תלחצו על איקס ותחזרו לפרק. יש פאנצ׳ים פאנצ׳ים פאנצ׳ים (אה כי אמרנו? זה של ברלד).• • •ומה עם הפודקאסט שלך?• • •וואטסאפ: https://wa.me/972504740040אתר: https://tox10.co.ilלהרשמה ליוטיוב: https://bit.ly/3MAv5XZאינסטגרם:",
+      "pubDate": "Wed, 13 May 2026 09:00:00 GMT",
+      "audioUrl": "https://anchor.fm/s/fca75880/podcast/play/119895586/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-12%2F424026025-44100-2-29bc136ae1fb5.mp3",
+      "duration": "1:11:34",
+      "durationSeconds": 4294,
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
+      "episodeNumber": 81,
+      "season": 1,
+      "quotes": [],
+      "guid": "c5737b5f-8df3-4374-984a-311200e653cc",
+      "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/81---e3j9e32",
+      "youtubeId": null
+    },
     {
       "title": "פרק 80 - להתייחס לחמור בחדר",
       "description": "פרק 80 של הפודקאסט הכי חציל בארץ. \nכלום לא השתנה. נועם גמד, צח שמן. סיפורים, פאנצ׳ים ודוניות.\nתהנו.\n\n• • •\nומה עם הפודקאסט שלך?\n• • •\nוואטסאפ: https://wa.me/972504740040\nאתר: https://tox10.co.il\nלהרשמה ליוטיוב: https://bit.ly/3MAv5XZ\nאינסטגרם: https://www.instagram.com/tox10.co.il",
@@ -1262,6 +1278,6 @@
       "youtubeId": null
     }
   ],
-  "totalEpisodes": 78,
-  "fetchedAt": "2026-05-13T16:44:54.139Z"
+  "totalEpisodes": 79,
+  "fetchedAt": "2026-05-13T20:33:17.157Z"
 }
