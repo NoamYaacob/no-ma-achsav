@@ -6,9 +6,25 @@
     "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
     "link": "https://whatsnow.podbean.com",
     "language": "he",
-    "lastBuildDate": "2026-05-27T13:05:19.958Z"
+    "lastBuildDate": "2026-05-27T17:02:57.948Z"
   },
   "episodes": [
+    {
+      "title": "פרק 83 - הקול בראש של חודפי",
+      "description": "פרק 83 של הפודקאסט הכי חציל בארץ\nצח נאבק בקול בראש, נועם עבר לת''א וסיפור ההיכרות המרגש שלנו (איכ)\nתהנו, אה כי אמרנו? זה של ברלד\n• • •ומה עם הפודקאסט שלך?• • •\nוואטסאפ: https://wa.me/972504740040אתר: https://tox10.co.ilלהרשמה ליוטיוב: https://bit.ly/3MAv5XZאינסטגרם: https://www.instagram.com/tox10.co.il",
+      "shortDescription": "פרק 83 של הפודקאסט הכי חציל בארץ\nצח נאבק בקול בראש, נועם עבר לת''א וסיפור ההיכרות המרגש שלנו (איכ)\nתהנו, אה כי אמרנו? זה של ברלד\n• • •ומה עם הפודקאסט שלך?• • •\nוואטסאפ: https://wa.me/972504740040אתר: https://tox10.co.ilלהרשמה ליוטיוב: https://bit.ly/3MAv5XZאינסטגרם: https://www.instagram.com/tox10.c",
+      "pubDate": "Wed, 27 May 2026 09:00:00 GMT",
+      "audioUrl": "https://anchor.fm/s/fca75880/podcast/play/120553857/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-26%2F424905626-44100-2-fd913b83a8f17.mp3",
+      "duration": "1:17:22",
+      "durationSeconds": 4642,
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
+      "episodeNumber": 83,
+      "season": 1,
+      "quotes": [],
+      "guid": "b6a56977-3409-4fb3-b86e-c80e80a57ad0",
+      "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/83---e3jtgu1",
+      "youtubeId": null
+    },
     {
       "title": "פרק 82 - דהוי בשמש",
       "description": "פרק 82 של הפודקאסט הכי חצי מצליח בארץ. עם צח ונועם או נועם וצח תלוי מי יצליח להחזיר את התבנית הזאת לפודקאסט. על ספרים שמחרמנים נשים, מכבסות בדרום ת׳׳א ופסלים חיים ברחובות. תהנו, אה כי אמרנו? זה של ברלד• • •ומה עם הפודקאסט שלך?• • •וואטסאפ: https://wa.me/972504740040אתר: https://tox10.co.ilלהרשמה ליוטיוב: https://bit.ly/3MAv5XZאינסטגרם: https://www.instagram.com/tox10.co.il",
@@ -1294,6 +1310,6 @@
       "youtubeId": null
     }
   ],
-  "totalEpisodes": 80,
-  "fetchedAt": "2026-05-27T13:05:20.386Z"
+  "totalEpisodes": 81,
+  "fetchedAt": "2026-05-27T17:02:58.287Z"
 }
