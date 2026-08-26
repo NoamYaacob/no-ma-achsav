@@ -6,7 +6,7 @@
     "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
     "link": "https://whatsnow.podbean.com",
     "language": "he",
-    "lastBuildDate": "2026-08-26T08:33:27.602Z"
+    "lastBuildDate": "2026-08-26T12:35:31.512Z"
   },
   "episodes": [
     {
@@ -23,6 +23,22 @@
       "quotes": [],
       "guid": "085da790-371f-44ff-84da-01a2c6ff32cf",
       "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/89---e3nad4j",
+      "youtubeId": null
+    },
+    {
+      "title": "פרק - 90 רענון הומור",
+      "description": "קהל חסר החיים של הפודקאסט הכי חצי מצליח בארץ אולפני טוקז שרדו פיצוץ בצינור וצח ונועם או נועם וצח (תלוי מי יחזיר את התבנית האגדית לפודקאסט) הגיעו להקליט את פרק 90. והפעם- על קטטות בריכה, יום אינטנסיבי בשלמה סיקסט וצח הרוקסטאר עובר נהיגה מונעת.תהנו, אה כי אמרנו? זה של ברלדהופעות צח רוקח: https://sl1nk.com/ebnmy38הופעות נועם אונגר: https://www.artist.co.il/unger/• • •TOX10 ⋮ זה הדיבורומה עם הפודקאסט שלך?דברו איתנו בוואטסאפ:https://wa.me/972504740040אינסטגרםhttps://www.instagram.com/tox10.co.ilאתרhttps://tox10.co.ilלהרשמה ליוטיובhttps://bit.ly/3MAv5XZ",
+      "shortDescription": "קהל חסר החיים של הפודקאסט הכי חצי מצליח בארץ אולפני טוקז שרדו פיצוץ בצינור וצח ונועם או נועם וצח (תלוי מי יחזיר את התבנית האגדית לפודקאסט) הגיעו להקליט את פרק 90. והפעם- על קטטות בריכה, יום אינטנסיבי בשלמה סיקסט וצח הרוקסטאר עובר נהיגה מונעת.תהנו, אה כי אמרנו? זה של ברלדהופעות צח רוקח: https://sl1nk",
+      "pubDate": "Wed, 26 Aug 2026 09:00:00 GMT",
+      "audioUrl": "https://anchor.fm/s/fca75880/podcast/play/124715635/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-25%2F430514448-44100-2-7640f7f90c823.mp3",
+      "duration": "1:41:57",
+      "durationSeconds": 6117,
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/42288256/42288256-1736519940053-946f48cf86b32.jpg",
+      "episodeNumber": 88,
+      "season": 1,
+      "quotes": [],
+      "guid": "1bf060b9-ea7d-4d29-8ad2-5867faf50487",
+      "link": "https://podcasters.spotify.com/pod/show/tokzcoil----97/episodes/--90-e3nsh5j",
       "youtubeId": null
     },
     {
@@ -1408,6 +1424,6 @@
       "youtubeId": null
     }
   ],
-  "totalEpisodes": 87,
-  "fetchedAt": "2026-08-26T08:33:28.075Z"
+  "totalEpisodes": 88,
+  "fetchedAt": "2026-08-26T12:35:32.026Z"
 }
